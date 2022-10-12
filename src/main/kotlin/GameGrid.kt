@@ -33,9 +33,9 @@ class GameGrid(private var rows: Int, private var cols: Int) {
         if (grid[x][y] == "X") return grid
 
         val rowStart = max(x - 1, 0)
-        val rowFinish = min(x + 1, grid.size - 1)
+        val rowFinish = min(x + 1, rows- 1)
         val colStart = max(y - 1, 0)
-        val colFinish = min(y + 1, grid.size - 1)
+        val colFinish = min(y + 1, cols - 1)
 
         var ctr = 0
         for (curRow in rowStart..rowFinish) {
