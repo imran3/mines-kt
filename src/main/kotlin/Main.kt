@@ -1,8 +1,4 @@
-
-
 fun main() {
-    println("hello")
-
     val game = GameGrid(5, 5);
 
     game.printGrid(game.grid)
